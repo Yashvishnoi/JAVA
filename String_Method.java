@@ -20,6 +20,10 @@ public class String_Method {
 		System.out.println("Returns true or false in this case = "+ name.endsWith("ky") ); // It will check whether string end with ry or not
 		System.out.println("Returns Character at given index " + name.charAt(2)); // Returns character at that position
 		System.out.println("Returns index of the given String "+ name.indexOf("ar"));
+		System.out.println("Wheather given string matches or not = "+ name.equals("Harry")); // It is case sensitive
+		System.out.println("It matche the given string matches or not without case senstive " + name.equalsIgnoreCase("harry") );
+		System.out.println("Hi this is \"Yash "); // it will print the string like "Yash"
+		System.out.println("Hi this is \\ yash "); // It's output will be 'Hi this is \ yash'
 	}
 
 }
