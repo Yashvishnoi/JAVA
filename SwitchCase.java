@@ -5,15 +5,24 @@ public class SwitchCase {
 		Scanner sc = new Scanner(System.in);
 		String var = sc.nextLine();
 		switch (var) {
-			case "Subham":
+			case "Subham" -> {
 				System.out.println("You are Adult . Enjoy!! ");
-				break;
-			case "Yash" : 
+				System.out.println("You are Adult . Enjoy!! ");
+				System.out.println("You are Adult . Enjoy!! ");
+				System.out.println("You are Adult . Enjoy!! ");
+			}
+			case "Yash" -> { 
 				System.out.println("Hold Responsibilities :} ");
-				break;
-			default:
+				System.out.println("Hold Responsibilities :} ");
+				System.out.println("Hold Responsibilities :} ");
+				
+			}
+			default ->{
 				System.out.println("Oops Sorry :) ");
-		}
+			}
+			}
+			
+			
 	}
 
 }
