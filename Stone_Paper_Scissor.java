@@ -9,7 +9,7 @@ public class Stone_Paper_Scissor {
 		int rand_number = random.nextInt(3);
 		Scanner sc = new Scanner(System.in);
 		int a =sc.nextInt();
-		System.out.println("\n\nYou entered: "+a);
+		System.out.println("\n\nYou Entered: "+a);
 		System.out.println("Computer Entered: "+rand_number);
 		if(a==0 && rand_number==0 ) {
 			System.out.println("0 point for both");
