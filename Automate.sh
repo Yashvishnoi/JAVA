@@ -9,7 +9,4 @@ git commit -m "$commitMessage"
 
 git push -u origin master
 
-Yashvishnoi
-yashvishnoi@123
-Yashvishnoi
-yashvishnoi@123
+read
