@@ -5,6 +5,9 @@ public class Functions_of_array {
 		// TODO Auto-generated method stub
 		int [] marks = {5,7,8,9,10};
 		System.out.println(marks.length);
+		
+		String [] Student = {"Araj", "Anrul","Harshu","Sagel"};
+		System.out.println(Student[0]);
 	}
 
 }
