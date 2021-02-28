@@ -10,6 +10,11 @@ public class Functions_of_array {
 		for(int i = 0;i<Student.length;i++) {
 		System.out.println(Student[i]);
 		}
+		// Display using for-each loop
+		System.out.println("Printing using for-each loop ");
+		for(String element: Student) {
+			System.out.println(element);
+		}
 	}
 
 }
