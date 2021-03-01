@@ -13,10 +13,19 @@ public class PracticeSet_Of_Arrays {
 		}
 		
 		float sum =0;
+		
+		/* This is done using for loop
 		for(i=0;i<array.length;i++) {
 			sum=sum+array[i];
+		}*/
+		
+		// This is done using for each loop
+		for(float element:array) {
+			sum = sum+element;
 		}
-		System.out.println(sum);
+		
+		System.out.println("Sum ="+sum);
+// 2.
 	}
 
 }
