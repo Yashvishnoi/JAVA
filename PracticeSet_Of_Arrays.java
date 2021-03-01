@@ -67,6 +67,7 @@ public class PracticeSet_Of_Arrays {
 		
 // 4. Adding 2d matrices of size [2][3];
 /*	
+ 	system.out.println("Problem 4");
 	int [][] mat1 = {{1, 2, 3},
             	{4, 5, 6}};
     int [][] mat2 = {{2, 6, 13},
@@ -92,7 +93,8 @@ public class PracticeSet_Of_Arrays {
 */
   
 		
-// Wheather a array is sorted or not
+// 5.  Wheather a array is sorted or not
+		System.out.println("Problem 5");
 		boolean isSorted = true;
         int [] arr = {1, 12, 3, 4, 5, 34, 67};
         for(int i=0;i<arr.length-1;i++){
