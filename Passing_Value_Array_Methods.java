@@ -1,4 +1,4 @@
-public class Method_Overloading {
+public class Passing_Value_Array_Methods {
 	static void TellJoke() {
 		System.out.println("I invented a new word !!\n" +"Plagiarism ");
 		
