@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-class Employee {
+class employee {
 	int salary;
 	String name;
 	
-	int getSalary() {
+	public int getSalary() {
 		return salary;
 	}
 	
-	String getName () {
+	public String getName () {
 		return name;
 	}
 	
-	void  setName (String n) {
+	public void  setName (String n) {
 		name = n;
 	}
 }
@@ -20,8 +20,21 @@ class Employee {
 public class Class_And_Its_Properties {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc= new Scanner(System.in);
+		
+		
+		employee E = new employee() ;
+		System.out.println("Enter the name of employee");
+		E.name = sc.nextLine();
+		System.out.println("Enter the Salary");
+		E.salary = sc.nextInt();
+		
+		System.out.println("The Entered name is "+E.getName());
+		System.out.println("The entered Salary is "+E.getSalary());
+		
+		
+		
 	}
 
 }
