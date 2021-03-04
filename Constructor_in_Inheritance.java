@@ -20,8 +20,13 @@ class Base1 {
 class Derived1 extends Base1 {
 	int y;
 	Derived1() {
-		super(25);
 		System.out.println("This is derived Class Constructor");
+	}
+	
+	Derived1(int x, int y){
+		super(x);
+		this.y=y;
+		System.out.println("This is overloded derived class Constructor "+y);
 	}
 }
 public class Constructor_in_Inheritance {
@@ -30,6 +35,8 @@ public class Constructor_in_Inheritance {
 		// TODO Auto-generated method stub
 	
 		Derived1 d = new Derived1 ();
+		Derived1 d1 = new Derived1(50,699);
 	}
+	
 
 }
