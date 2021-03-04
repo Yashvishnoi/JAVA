@@ -20,6 +20,7 @@ class Base1 {
 class Derived1 extends Base1 {
 	int y;
 	Derived1() {
+		super(25);
 		System.out.println("This is derived Class Constructor");
 	}
 }
@@ -27,6 +28,7 @@ public class Constructor_in_Inheritance {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	
 		Derived1 d = new Derived1 ();
 	}
 
