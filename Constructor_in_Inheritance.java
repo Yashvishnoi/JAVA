@@ -12,9 +12,7 @@ class Base1 {
 		this.x=x;
 	}
 	
-	void getX() {
-		System.out.println("This Is Base Constructor");
-	}
+	
 }
 
 class Derived1 extends Base1 {
