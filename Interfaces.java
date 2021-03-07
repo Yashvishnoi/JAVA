@@ -3,12 +3,18 @@ interface Bicycle {
 	void SpeedUP(int increment);
 }
 
-class AvonCycle implements Bicycle {
+interface GearBox {
+	void Gearup();
+	void GearDown();
+}
+
+
+class AvonCycle implements Bicycle,GearBox {
 	void blowhorn() { 
 		System.out.println("Pee Poo Pee Poo :)");
 	}
 	
-	public void ApplyBreak(int decrement) {
+	public void ApplyBreak(int decrement) { 
 		System.out.println("Break Applied");
 	}
 	
