@@ -1,5 +1,5 @@
 
-
+// Abstract class it includes both the abstract and non-abstract class
 abstract class Parent2{
     public Parent2(){
         System.out.println("Mai base2 ka constructor hoon");
@@ -11,6 +11,7 @@ abstract class Parent2{
     abstract public void greet2();
 }
 
+// Concrete Class
 class Child2 extends Parent2{
     @Override
     public void greet(){
@@ -22,6 +23,7 @@ class Child2 extends Parent2{
     }
 }
 
+// Abstract Class
 abstract class Child3 extends Parent2{
     public void th(){
         System.out.println("I am good");
