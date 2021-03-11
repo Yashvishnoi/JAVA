@@ -23,7 +23,7 @@ class AvonCycle implements Bicycle,GearBox {
 	}
 	
 	public void Gearup() {
-		System.out.println("Increase the gear");
+		System.out.println("Gear Up");
 	}
 	
 	public void GearDown() {
