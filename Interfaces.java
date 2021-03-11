@@ -49,10 +49,12 @@ class AvonCycle implements Bicycle,GearBox {
 public class Interfaces {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		RangerCycle R = new RangerCycle();
-		System.out.println(R.a);
 		
+		
+		RangerCycle R = new RangerCycle();
+		System.out.println(R.a); // You can create properties in interfaces	
+	
+	//	R.a = 45; // You cannot modify the properties in interfaces as they are final
 		
 		AvonCycle AC = new AvonCycle();
 		AC.ApplyBreak(1);
