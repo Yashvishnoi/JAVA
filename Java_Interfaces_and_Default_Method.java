@@ -16,6 +16,24 @@ class MyPhone{
 		System.out.println("Incoming..."+number);
 	}
 }
+class MySmartPhone extends MyPhone implements camera,wifi {
+public void Takepic() {
+	System.out.println("Photo taken");
+}
+
+public void VideoRecord() {
+	System.out.println("Video Recorded");
+}
+	
+public String[] getNetwork() {
+	System.out.println("Getting list of network");
+	String[] list= {"Wifi 1","Hotspot 021478"};
+	return list; 
+}
+	
+}
+
+
 
 public class Java_Interfaces_and_Default_Method {
 
