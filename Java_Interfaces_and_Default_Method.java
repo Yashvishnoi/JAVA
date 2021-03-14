@@ -1,6 +1,7 @@
 interface  camera {
 	void TakePic() ;
 	void VideoRecord();
+	
 }
 
 interface wifi {
@@ -17,7 +18,7 @@ class MyPhone{
 	}
 }
 class MySmartPhone extends MyPhone implements camera,wifi {
-public void Takepic() {
+public void TakePic() {
 	System.out.println("Photo taken");
 }
 
@@ -39,7 +40,11 @@ public class Java_Interfaces_and_Default_Method {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		MySmartPhone ms= new MySmartPhone();
+		String[] ar = ms.getNetwork();
+		for(String item : ar) {
+			System.out.println(item);
+		
+		}
 	}
-
 }
