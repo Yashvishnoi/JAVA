@@ -60,7 +60,7 @@ public class Java_Interfaces_and_Default_Method {
 		
 		ms.RecordVideo();
 		
-		ms.greet()
+		// ms.greet(); We can't access this ERROR because it is private
 		
 		String[] ar = ms.getNetwork();
 		for(String item : ar) {
