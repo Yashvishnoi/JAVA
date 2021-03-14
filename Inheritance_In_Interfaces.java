@@ -29,14 +29,17 @@ class Sounds implements wildAnimal {
 	public void Fox() {
 		System.out.println("Awwww...");
 	}
-	\
+	
 }
 
 public class Inheritance_In_Interfaces {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Sounds s = new Sounds();
+		s.Dog();
+		s.cat();
+		s.Lion();
+		s.Fox();
 	}
 
 }
