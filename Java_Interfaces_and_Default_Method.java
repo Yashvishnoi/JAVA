@@ -1,7 +1,9 @@
 interface  camera {
 	void TakePic() ;
 	void VideoRecord();
-	
+	default void RecordVideo() {    // We can override this  
+		System.out.println("Recording in 1040p");
+	}
 }
 
 interface wifi {
@@ -44,6 +46,7 @@ public class Java_Interfaces_and_Default_Method {
 		String[] ar = ms.getNetwork();
 		for(String item : ar) {
 			System.out.println(item);
+		ms.RecordVideo();
 		
 		}
 	}
