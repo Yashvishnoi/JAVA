@@ -33,6 +33,10 @@ public String[] getNetwork() {
 	String[] list= {"Wifi 1","Hotspot 021478"};
 	return list; 
 }
+
+public void RecordVideo() {
+	System.out.println("Recording in 2040p");
+}
 	
 }
 
