@@ -1,7 +1,13 @@
 interface  camera {
 	void TakePic() ;
 	void VideoRecord();
+	
+	private void greet() { // We can't override this method
+		System.out.println("Hey Gems ");
+	}
+	
 	default void RecordVideo() {    // We can override this  
+		greet();
 		System.out.println("Recording in 1040p");
 	}
 }
@@ -34,9 +40,13 @@ public String[] getNetwork() {
 	return list; 
 }
 
-public void RecordVideo() {
-	System.out.println("Recording in 2040p");
+/* We can Override this
+ 
+ public void RecordVideo() {
+ 	System.out.println("Recording in 2040p");
 }
+
+*/
 	
 }
 
@@ -47,10 +57,15 @@ public class Java_Interfaces_and_Default_Method {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MySmartPhone ms= new MySmartPhone();
+		
+		ms.RecordVideo();
+		
+		ms.greet()
+		
 		String[] ar = ms.getNetwork();
 		for(String item : ar) {
 			System.out.println(item);
-		ms.RecordVideo();
+		
 		
 		}
 	}
