@@ -39,11 +39,15 @@ public String[] getNetwork() {
 	String[] list= {"Wifi 1","Hotspot 021478"};
 	return list; 
 }
+
 public class Polymorphism {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public  void main(String[] args) {
+		camera2 cam = new MySmartPhone2();
+		cam.RecordVideo();
 	}
 
 }
+}
+
+
