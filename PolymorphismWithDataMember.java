@@ -20,9 +20,14 @@ class Ninja1000 extends Bike {
 public class PolymorphismWithDataMember {
 
 	public static void main(String[] args) {
-		Bike  b = new Bike();
-		System.out.println("Max Speed=" + b.SpeedLimit);
-	}
-		 
 		
-}
+		Bike b  = new Ninja1000 () ;
+		System.out.println(+b.SpeedLimit); // Data Member is not override
+} 
+	}
+
+
+
+
+
+
