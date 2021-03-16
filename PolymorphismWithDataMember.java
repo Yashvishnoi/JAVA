@@ -15,11 +15,14 @@ class GSA1200 extends Bike{
 class Ninja1000 extends Bike {
 	int SpeedLimit = 300;
 }
+
+
 public class PolymorphismWithDataMember {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Bike  b = new Bike();
+		System.out.println("Max Speed=" + b.SpeedLimit);
 	}
-
+		 
+		
 }
