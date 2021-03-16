@@ -20,14 +20,21 @@ class HDFC extends Bank {
 
 class AXIS extends Bank {
 	float RateOfInterest() {
-		return 6.7;
+		return 6.7f;
 	}
 }
 
 public class Polymorphism2 {
 
 	public static void main(String[] args) {
-		Bank b = new Bank();
+		Bank b;
+		b= new Bank();
+		System.out.println("Rate of Interest "+ b.RateOfInterest());
+		 b = new ICICI() ;
+		System.out.println("Rate of Interest "+ b.RateOfInterest());
+		b = new HDFC  ();
+		System.out.println("Rate of Interest "+ b.RateOfInterest());
+		b = new AXIS();
 		System.out.println("Rate of Interest "+ b.RateOfInterest());
 	}
 
