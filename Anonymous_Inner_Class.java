@@ -11,6 +11,7 @@ public class Anonymous_Inner_Class {
 				System.out.println("Thos is Anonymous class");
 			}
 		};
+		obj.display();
 	}
 
 }

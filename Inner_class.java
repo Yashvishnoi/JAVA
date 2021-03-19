@@ -1,4 +1,4 @@
-// Concrete Inner Class
+// Local Inner Class
 class Animal {
 	
    private class Mammals {
@@ -24,7 +24,6 @@ public class Inner_class {
 	      
 	      // Accessing the display_Inner() method.
 	      a.display();
-		
 	
 	}
 
