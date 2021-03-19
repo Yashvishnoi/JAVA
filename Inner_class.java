@@ -1,3 +1,4 @@
+// Concrete Inner Class
 class Animal {
 	
    private class Mammals {
