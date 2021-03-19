@@ -1,9 +1,15 @@
+// Static Inner Class
 
 public class StaticInnerClass {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	static int cost = 512;
+	static class Swift {
+		void Price() {
+			System.out.println("Swift cost is $"+cost);
+		}
 	}
-
+	
+	public static void main(String[] args) {
+		StaticInnerClass.Swift s = new StaticInnerClass.Swift();
+		s.Price();
+	}
 }
