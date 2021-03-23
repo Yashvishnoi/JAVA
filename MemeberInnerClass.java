@@ -1,0 +1,14 @@
+
+public class MemeberInnerClass {
+	 private int data=30;  
+	 class Inner{  
+	  void msg(){System.out.println("data is "+data);}  
+	 }  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MemeberInnerClass obj=new MemeberInnerClass();  
+		MemeberInnerClass.Inner in=obj.new Inner();  
+		  in.msg(); 
+	}
+
+}
