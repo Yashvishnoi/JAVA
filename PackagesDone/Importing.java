@@ -1,14 +1,18 @@
 import codewithharry.Gym.harryGym;
+class Using extends harryGym{
+    void meth2() {
+        System.out.println(x);
+        System.out.println(y);
+		//System.out.println(z);
+		//System.out.println(a);
+    }
+}
 
 public class Importing{
     public static void main(String[] args) {
         System.out.println("This is importing");
-        harryGym c = new harryGym();
-        System.out.println(c.x);
-        // We can't access the protected default and Private members
-		// System.out.println(c.y);
-		// System.out.println(c.z);
-		//System.out.println(c.a);
-        c.hey();
+        Using c = new Using();
+        c.meth2();
+        
     }
 }
