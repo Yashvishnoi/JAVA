@@ -1,4 +1,4 @@
-package codewithharry.c;
+package codewithharry.C;
 
 public class harryC{
     public static void main(String[] args) {
