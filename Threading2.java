@@ -14,8 +14,9 @@ class MyThread22 implements Runnable{
 public class Threading2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		MyThread11 t1 =new MyThread11();
+		MyThread22 t2 =new MyThread22();
+		
 	}
 
 }
