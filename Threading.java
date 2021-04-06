@@ -9,6 +9,15 @@ public class Threading {
 		}
 	}
 	
+	class MyThread2 extends Thread {
+		public void run() {
+			while(true) {
+				System.out.println("Thread2 is BOSS");
+				System.out.println("I am UnHappy");
+			}
+		}
+	}
+	
 	public static void main(String[] args) {	
 	}
 
