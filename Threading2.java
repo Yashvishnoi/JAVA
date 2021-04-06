@@ -1,22 +1,32 @@
 
-class MyThread11 implements Runnable{
+class MyThreadRunnable1 implements Runnable{
 	public void run() {
-		System.out.println("I am Thread using Runnable class");
+		while(true) {
+			System.out.println("I am Thread using Runnable class");
+		}
 	}
 }
 
-class MyThread22 implements Runnable{
+class MyThreadRunnable2 implements Runnable{
 	public void run() {
-		System.out.println("Runnable class");
+		while(true) {
+			System.out.println("Runnable class");
+		}
 	}
 }
 
 public class Threading2 {
 
 	public static void main(String[] args) {
-		MyThread11 t1 =new MyThread11();
-		MyThread22 t2 =new MyThread22();
 		
+		MyThreadRunnable1 bullet1 = new MyThreadRunnable1();
+		Thread gun1 = new Thread(bullet1);
+		
+		MyThreadRunnable2 bullet2 = new MyThreadRunnable2();
+		Thread gun2 = new Thread(bullet2);
+		
+		gun1.start();
+		gun2.start();
 	}
 
 }
