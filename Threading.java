@@ -1,4 +1,4 @@
-public class Threading {
+
 	
 	class MyThread1 extends Thread {
 		public void run() {
@@ -17,8 +17,10 @@ public class Threading {
 			}
 		}
 	}
-	
+public class Threading {
 	public static void main(String[] args) {	
+		MyThread1 t1 = new MyThread1();
+		MyThread2 t2= new MyThread2();
+		
 	}
-
 }
