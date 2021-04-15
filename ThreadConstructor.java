@@ -15,5 +15,6 @@ public class ThreadConstructor {
 		MyThr t = new MyThr("Harry");
 		t.start();
 		System.out.println("The id of the thread t is "+t.getId());
+		System.out.println("The name of the thread t is "+t.getName());
 	}
 }
