@@ -11,6 +11,7 @@ class MyThr extends Thread{
 public class ThreadConstructor {
 
 	public static void main(String[] args) {
-			
+		MyThr t = new MyThr("Harry");
+		t.start();
 	}
 }
