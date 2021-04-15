@@ -11,18 +11,18 @@ class Account {
 	double Balance;
 	
 	public Account(int AccId1 , double Balance1) {
-		AccId=AccId1;
+		this.AccId=AccId1;
 		this.Balance=Balance1;
 	}
 	
 	double deposit(double amount) {
-		Balance=+amount;
+		Balance+=amount;
 		return Balance;
 	}
 	
 	double withdraw(double amount) throws LowBalance {
 		if(amount<=Balance) {
-			Balance=-amount;
+			Balance-=amount;
 		}
 		else {
 			throw new LowBalance("Insufficient Amount");
