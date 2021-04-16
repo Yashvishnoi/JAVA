@@ -1,4 +1,4 @@
-package codewithharry. Gym;
+package codewithharry.Gym;
 
 public class harryGym {
     public int x=5;
