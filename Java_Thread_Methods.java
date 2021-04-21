@@ -1,8 +1,8 @@
-class MyNewThread extends Thread {
-	public MyNewThread(String name) {
+class MyNewThread1 extends Thread {
+	public MyNewThread1(String name) {
 		super(name);
 	}
-	public void rn() {
+	public void run() {
 		while(true) {
 			System.out.println("I am a thread");
 			System.out.println("Thank you: ");
@@ -14,7 +14,7 @@ class MyNewThread2 extends Thread {
 	public MyNewThread2(String name) {
 		super(name);
 	}
-	public void rn() {
+	public void run() {
 		while(true) {
 			System.out.println("Thread 2");
 			System.out.println("Welcome");
