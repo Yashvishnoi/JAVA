@@ -12,7 +12,7 @@ t.start();
 public void run() {
  try {
      for(int i = 100; i > 0; i--) {
-     System.out.println(name);
+     System.out.print(name+" ");
       Thread.sleep(1000);
 }
 }catch (InterruptedException e) {
@@ -25,8 +25,8 @@ public void run() {
 class AssignmentQuestion5 {
 public static void main(String args[]) {
      new MyThread("I");
-     new MyThread("Love");
      new MyThread("UPES");
+     new MyThread("Love");
 try {
      Thread.sleep(10000);
 } catch (InterruptedException e) {
