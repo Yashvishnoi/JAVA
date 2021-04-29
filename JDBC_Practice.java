@@ -1,15 +1,27 @@
 import java.sql.*;  
-class JDBC_Practice{  
-public static void main(String args[]){  
-try{  
-Class.forName("com.mysql.jdbc.Driver");  
-Connection con=DriverManager.getConnection(  
-"jdbc:mysql://localhost:3306/JDBC","root","Yash@123");  
-Statement stmt=con.createStatement();  
-ResultSet rs=stmt.executeQuery("select * from shop;");  
-while(rs.next())  
-System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
-con.close();  
-}catch(Exception e){ System.out.println(e);}  
-}  
+class JDBC_Practice
+{  	
+	public static void main(String args[]){  
+		try{  
+			// load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver"); 
+			
+			// Create a connection
+			String url="jdbc:mysql://localhost:3306/youtube";
+			String username = "root";
+			String psswd = "Yash@123";
+			Connection con=DriverManager.getConnection(url,username,psswd);  
+			
+			if(con.isClosed()) {
+				System.out.println("Connection is closed");
+			}
+			else {
+				System.out.println("Connection Created");
+			}
+				
+		}
+		catch(Exception e){ 
+			System.out.println(e);
+		}  
+	}  
 }
