@@ -1,6 +1,8 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
-public class Creating_Table_In_Sql {
+public class Task11_JDBC {
 
 	public static void main(String[] args) {
 		try {
@@ -9,11 +11,12 @@ public class Creating_Table_In_Sql {
 			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/youtube","root","Yash@123");
 			
 			// Create a query
-			String g="create table table1(tID int(20) primary key , tName varchar(200) not null)";
+			String g="create table Employee(EId int(20) primary key , EName varchar(200) not null, ESalary int(20), EPhone int(12), EAllowance int(10))";
 			
 			// Create a Statement
 			Statement stmt = con.createStatement();
-			stmt.executeUpdate(g);
+			stmt.execute(g);
+			
 			System.out.println("table created in Database....");
 			con.close();
 		}
