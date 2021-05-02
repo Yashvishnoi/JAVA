@@ -27,11 +27,11 @@ public class Java_Thread_Method {
 		ThreadMethod1 t1 = new ThreadMethod1();
 		ThreadMethod2 t2 = new ThreadMethod2();
 		t1.start();
-//		try {
-//			t1.join(); // it will print t1.start() until it wiil b fifnished
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
+		try {
+			t1.join(); // it will print t1.start() until it wiil b fifnished
+		} catch (Exception e) {
+			System.out.println(e);
+	}
 		t2.start();
 	}
 }
